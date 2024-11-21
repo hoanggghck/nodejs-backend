@@ -27,9 +27,20 @@ router.get('/check', (req, res, next) => {
 router.get('/api/get', (req, res, next) => {
     res.status(200).json({
         message: 'success',
-        data: {
-            name: "goldz"
-        }
+        data: [
+            {
+                name: "goldz",
+                age: 20
+            },
+            {
+                name: "goldz2",
+                age: 33
+            },
+            {
+                name: "goldz3",
+                age: 44
+            }
+        ]
     })
 })
 
